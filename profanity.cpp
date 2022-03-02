@@ -280,7 +280,7 @@ int main(int argc, char * * argv) {
 		}
 
 		cl_program clProgram;
-		if (vDeviceBinary.size() == vDevices.size()) {
+		/*if (vDeviceBinary.size() == vDevices.size()) {
 			// Create program from binaries
 			bUsedCache = true;
 
@@ -297,6 +297,8 @@ int main(int argc, char * * argv) {
 				return 1;
 			}
 		} else {
+    */
+    {
 			// Create a program from the kernel source
 			std::cout << "  Compiling kernel..." << std::flush;
 			const std::string strKeccak = readFile("keccak.cl");
